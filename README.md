@@ -45,3 +45,35 @@ pip install -r requirements.txt
 
 # Start the g-rent node
 python main.py --mode provider --wallet YOUR_WALLET_ADDRESS
+g-rent/
+├── .gitignore               # Prevents tracking of sensitive/unnecessary files
+├── LICENSE                  # Legal licensing (e.g., MIT or GNU GPLv3)
+├── README.md                # Project overview, installation, and usage guides
+├── requirements.txt         # List of Python dependencies (PyTorch, Web3, etc.)
+├── package.json             # Dependencies for blockchain tools (Hardhat/Truffle)
+│
+├── src/                     # Main source code directory
+│   ├── network/             # P2P and Torrent-based communication logic
+│   │   ├── peer_node.py     # P2P node discovery and connectivity
+│   │   └── torrent_core.py  # Sharding and distributed data streaming
+│   ├── compute/             # Hardware management and AI execution
+│   │   ├── gpu_orchestrator.py # CUDA management and GPU resource allocation
+│   │   └── v_jepa_engine.py    # V-JEPA model training and inference pipelines
+│   └── api/                 # Interfaces for external communication or CLI
+│
+├── contracts/               # Solidity smart contracts
+│   ├── GPUProviderRegistry.sol # Management of available GPU nodes
+│   └── RentalEscrow.sol        # Trustless payment and rental agreement logic
+│
+├── scripts/                 # Automation and utility scripts
+│   ├── deploy.py            # Blockchain contract deployment scripts
+│   └── setup_env.sh         # One-click environment setup for new nodes
+│
+├── tests/                   # Test suites
+│   ├── test_network/        # Connectivity and peer discovery tests
+│   ├── test_compute/        # GPU performance and AI workload tests
+│   └── test_contracts/      # Smart contract functional and security tests
+│
+└── docs/                    # Technical documentation and architecture diagrams
+    ├── architecture.md      # Detailed P2P and Blockchain workflow
+    └── v_jepa_integration.md # Guide for running V-JEPA on g-rent
