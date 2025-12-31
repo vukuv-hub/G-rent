@@ -1,0 +1,27 @@
+# --- AI & Deep Learning (V-JEPA Core) ---
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+numpy>=1.24.0
+
+# --- P2P Networking & Data Streaming ---
+# libp2p and networking tools for peer discovery
+libp2p>=0.2.0
+aiohttp>=3.8.0
+tqdm>=4.65.0       # Progress bars for data sharding/transfers
+
+# --- Blockchain & Smart Contracts ---
+web3>=6.0.0        # Ethereum/EVM interaction
+eth-account>=0.8.0
+
+# --- Hardware & GPU Monitoring ---
+# To monitor VRAM and GPU health for rentals
+pynvml>=11.5.0     # NVIDIA Management Library
+
+# --- Environment & Configuration ---
+python-dotenv>=1.0.0  # Loading .env files
+pyyaml>=6.0.0         # Parsing configuration files
+click>=8.1.0          # For creating the CLI (Command Line Interface)
+
+# --- Security ---
+cryptography>=40.0.0
