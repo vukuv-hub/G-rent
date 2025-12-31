@@ -1,0 +1,49 @@
+# --- Security & Secrets ---
+.env
+.env.*
+*.pem
+*.key
+secrets.json
+private_key.txt
+
+# --- Python / AI (V-JEPA) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+.ipynb_checkpoints/
+
+# --- Large AI Data & Models (Crucial for V-JEPA) ---
+# V-JEPA videoları ve model ağırlıkları çok büyük olduğu için dışarıda tutulur
+data/
+datasets/
+models/*.pth
+models/*.h5
+models/*.ckpt
+*.mp4
+*.avi
+
+# --- Blockchain / Solidity (Hardhat/Truffle) ---
+node_modules/
+artifacts/
+cache/
+typechain/
+coverage/
+coverage.json
+.openzeppelin/
+
+# --- Operating System ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
