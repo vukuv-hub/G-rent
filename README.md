@@ -2,7 +2,7 @@
 
 **Decentralized P2P GPU Computing for the AI Era**
 
-g-rent is a decentralized, peer-to-peer (P2P) GPU sharing and rental platform. It is specifically engineered to handle massive AI workloads, such as **Meta’s V-JEPA** (Video Joint-Embedding Predictive Architecture), by combining torrent-based data distribution with blockchain-powered trust. BRİFLY: Train Vision-Language Joint Embedding Predictive Architecture (VL-JEPA) models on a fully decentralized peer-to-peer network using consumer GPUs
+g-rent is a decentralized, peer-to-peer (P2P) GPU sharing and rental platform. It is specifically engineered to handle massive AI workloads, such as **Meta’s V-JEPA** (Video Joint-Embedding Predictive Architecture), by combining torrent-based data distribution with blockchain-powered trust. BRIFLY: Train Vision-Language Joint Embedding Predictive Architecture (VL-JEPA) models on a fully decentralized peer-to-peer network using consumer GPUs
 ---
 
 ## 🌟 Overview 🎯 What is g-rent?
