@@ -1,27 +1,60 @@
-# --- AI & Deep Learning (V-JEPA Core) ---
+
+REQUIREMENTS_TXT = """
+# Core dependencies
 torch>=2.0.0
 torchvision>=0.15.0
-torchaudio>=2.0.0
-numpy>=1.24.0
+numpy>=1.23.0
+einops>=0.6.0
+timm>=0.9.0
 
-# --- P2P Networking & Data Streaming ---
-# libp2p and networking tools for peer discovery
-libp2p>=0.2.0
-aiohttp>=3.8.0
-tqdm>=4.65.0       # Progress bars for data sharding/transfers
-
-# --- Blockchain & Smart Contracts ---
-web3>=6.0.0        # Ethereum/EVM interaction
-eth-account>=0.8.0
-
-# --- Hardware & GPU Monitoring ---
-# To monitor VRAM and GPU health for rentals
-pynvml>=11.5.0     # NVIDIA Management Library
-
-# --- Environment & Configuration ---
-python-dotenv>=1.0.0  # Loading .env files
-pyyaml>=6.0.0         # Parsing configuration files
-click>=8.1.0          # For creating the CLI (Command Line Interface)
-
-# --- Security ---
+# Networking
+kademlia>=2.2.2
+twisted>=22.10.0
 cryptography>=40.0.0
+
+# Data handling
+opencv-python>=4.7.0
+pillow>=9.5.0
+av>=10.0.0
+
+# Utilities
+pyyaml>=6.0
+tqdm>=4.65.0
+tensorboard>=2.13.0
+wandb>=0.15.0
+
+# Optional (for full features)
+# libtorrent>=2.0.0  # For torrent protocol
+# pynvml>=11.5.0     # For GPU monitoring
+"""
+
+# ============================================================================
+# FILE: requirements-dev.txt
+# ============================================================================
+REQUIREMENTS_DEV_TXT = """
+# Testing
+pytest>=7.3.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
+pytest-mock>=3.10.0
+
+# Code quality
+black>=23.3.0
+flake8>=6.0.0
+mypy>=1.3.0
+pylint>=2.17.0
+isort>=5.12.0
+
+# Pre-commit
+pre-commit>=3.3.0
+
+# Documentation
+sphinx>=6.2.0
+sphinx-rtd-theme>=1.2.0
+sphinx-autodoc-typehints>=1.23.0
+myst-parser>=1.0.0
+
+# Development tools
+ipython>=8.12.0
+jupyter>=1.0.0
+"""
